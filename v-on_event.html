@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event use</title>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <style>
+        .box{
+            background-color: cadetblue;
+            height: 400px;
+            width: 400px;
+            margin-left: 40%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p{
+            /* text-align: center; */
+            /* vertical-align: middle; */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            font-size: 40px;
+        }
+    </style>
+<body>
+    
+    <div id="app">
+        <h2> {{name}} </h2>
+
+        <button v-on:click="updateName">Click Here</button>
+                <!-- updateName() incorrent for event method -->
+
+        <div v-on:mousemove="getCoord" class="box">
+            <p>hover here</p>
+        </div>
+
+        <p>X : {{x}}</p>
+        <p>Y : {{y}}</p>
+    </div>
+
+    <script src="v-on_event.js"></script>
+</body>
+</html>

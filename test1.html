@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>  <!-- vue is connected here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="app">
+        <p>I love you {{name}}</p>
+        <h3>{{flower[4]}}</h3>
+        <p>{{car()}}</p>
+        <hr>
+        <p v-for="(value, key, index) in user">
+            {{index+10}} - {{key}} - {{value}}
+        </p>
+        <hr>
+        <p v-for="(value, key, index) in user">
+            {{index+1}} : {{key}} = {{value}} 
+        </p>
+        <hr>
+        <p v-for="i in 5">
+            {{i}} => I love you
+        </p>
+    </div>
+
+    <script src="test1.js"></script>
+</body>
+</html>

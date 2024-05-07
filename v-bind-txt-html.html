@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-bind</title>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- two types of directives 1. build-in, 2. custom  -->
+    
+    <div id="app">
+        <!-- v-bind: it's a directive, have to use before an attribute  -->
+        <img v-bind:src="src" v-bind:alt="alt">
+        <hr>
+        <a v-bind:href="link" target="_blank">Click here</a>
+        <hr>
+        <!-- <h4>{{text}}</h4> -->
+        <h3 v-text="text"></h3>
+        <hr>
+        <!-- <h4><span style='color: aqua;'>Queen</span></h4> -->
+        <!-- <h4 v-text="hText"></h4> -->
+        <h2 v-html="hText"></h2>
+    </div>
+
+    <script src="v-bind-txt-html.js"></script>
+</body>
+</html>
